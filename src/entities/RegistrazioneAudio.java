@@ -1,26 +1,26 @@
 package entities;
 
-public class RegistrazioneAudio extends ElementoMultimediale{
-    private int volume;
-    public RegistrazioneAudio(String titolo, int durata, int volume) {
-        super(titolo, durata);
-        this.volume = volume;
-    }
+public class RegistrazioneAudio extends ElementoMultimedialeVolume{
 
-    public int getVolume() {
-        return volume;
-    }
+    public RegistrazioneAudio(String titolo,int durata, int volume) {
+        super(titolo, durata, volume);
 
-    public  void abbassaVolume(){
-        if(volume > 0){
-            volume --;
-        }else {
-            System.out.println("Il volume è già impostato a zero!");
-        }
     }
-    public  void alzaVolume(){
-            volume ++;
-    }
+//
+//    public int getVolume() {
+//        return volume;
+//    }
+//
+//    public  void abbassaVolume(){
+//        if(volume > 0){
+//            volume --;
+//        }else {
+//            System.out.println("Il volume è già impostato a zero!");
+//        }
+//    }
+//    public  void alzaVolume(){
+//            volume ++;
+//    }
 
     @Override
     public void play() {
