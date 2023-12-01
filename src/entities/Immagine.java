@@ -6,8 +6,5 @@ public class Immagine extends ElementoMultimediale{
         super(titolo);
     }
 
-    @Override
-    public void play() {
-        System.out.println("Immagine: " + getTitolo());
-    }
+
 }

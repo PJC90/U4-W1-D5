@@ -6,8 +6,5 @@ public class Video extends ElementoMultimediale{
         super(titolo, durata);
     }
 
-    @Override
-    public void play() {
-        System.out.println("Video: " +getTitolo() + " Durata: " + getDurata());
-    }
+
 }

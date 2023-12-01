@@ -23,5 +23,13 @@ public abstract class ElementoMultimediale implements Player {
         return durata;
     }
 
-    public abstract void play();
+    @Override
+    public void play() {
+        if(durata > 0){
+            System.out.println("Riproduzione:" + getTitolo() + " (Durata: " + getDurata() + " secondi)");
+        } else {
+            System.out.println("Errore file non riproducibile");
+        }
+    }
+//    public abstract void play();
 }

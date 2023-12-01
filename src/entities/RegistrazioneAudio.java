@@ -6,8 +6,5 @@ public class RegistrazioneAudio extends ElementoMultimediale{
         super(titolo, durata);
     }
 
-    @Override
-    public void play() {
-        System.out.println("Audio: " + getTitolo() + " Durata: " + getDurata());
-    }
+
 }
