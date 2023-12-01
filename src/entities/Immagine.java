@@ -20,7 +20,7 @@ public class Immagine extends ElementoMultimediale{
 
     public void show() {
         System.out.println("Riproduzione:" + getTitolo() );
-        System.out.println("Luminosità"+ getTitolo());
+        System.out.println("Luminosità  "+ getTitolo());
         for (int a = 0; a < luminosita; a++) {
             for (int b = 0; b < luminosita; b++) {
                 System.out.print("*");
